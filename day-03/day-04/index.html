@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h1>javascript vairables</h1>
+    
+       <p>in this example x, y, and z are  variable</p>
+       <p id="demo"></p>
+
+       <script>
+        var x = 5;
+         console.log("value of x:", x)
+         x = 5
+         console.log("value of x:",x)
+        const y = 6;
+        const z = x + y;
+        let r = 90
+        document.getElementById("demo").innerHTML ="the value of z is " + z;
+        function myFuntion(){
+            let r=34;
+            console.log("value of r inside a function::",r);
+        }
+        myFuntion();
+        console.log("value of r global scope",r);    
+        {
+            var x = 98;
+            console.log("inside block", x);
+        }
+        console.log("value of r is::", x);
+       </script>
+</body>
+</html>
